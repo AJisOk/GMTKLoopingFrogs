@@ -42,8 +42,6 @@ public class TongueMechanic : MonoBehaviour
         //form a different type of connection if a dynamic object is hit
         if(hit.rigidbody.bodyType == RigidbodyType2D.Dynamic)
         {
-            Debug.Log("Dynamic object hit");
-
             _tongueActive=true;
             _dynamicGrabbed = true;
 

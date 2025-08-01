@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Speed>k__BackingField: 10
-  <Acceleration>k__BackingField: 10
+  <Acceleration>k__BackingField: 5
   <TurnSpeed>k__BackingField: 15
   <StoppingDistance>k__BackingField: 0.25
   <LookInMoveDirection>k__BackingField: 1
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lengthOffset: 1
-  _tongueRange: 10
+  _tongueRange: 8
   _grappleLayer:
     serializedVersion: 2
     m_Bits: 65
