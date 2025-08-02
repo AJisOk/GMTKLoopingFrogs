@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.Cinemachine;
 using UnityEditor.Rendering;
 using UnityEngine;
@@ -36,7 +37,7 @@ public class TongueMechanic : MonoBehaviour
             _tongueRange,
             _grappleLayer);
 
-        //return on miss
+        //fire a false shot on miss
         if (hit.collider == null) return;
 
         //form a different type of connection if a dynamic object is hit
@@ -55,8 +56,17 @@ public class TongueMechanic : MonoBehaviour
             _tongueRenderer.SetPosition(1, transform.position + _transformOffset);
             _tongueRenderer.enabled = true;
 
+            if(hit.rigidbody.TryGetComponent<Interactable>(out Interactable interactable))
+            {
+                interactable.OnGrapple();
+                //StartCoroutine(DelayedReleaseTongue());
+                ReleaseTongue();
+            }
+
+
             return;
         }
+
 
         _tongueActive = true;
 
@@ -68,6 +78,17 @@ public class TongueMechanic : MonoBehaviour
         _tongueRenderer.enabled = true;
         _tongueRenderer.SetPosition(0, _hitPoint);
         _tongueRenderer.SetPosition(1, transform.position + _transformOffset);
+        
+        
+    }
+
+    private IEnumerator DelayedReleaseTongue()
+    {
+        yield return new WaitForSeconds(.5f);
+
+        ReleaseTongue();
+
+        yield return null;
     }
 
     public void OnTongueRelease(InputValue value)
