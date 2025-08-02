@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lengthOffset: 1
-  _tongueRange: 6
+  _tongueRange: 6.5
   _grappleLayer:
     serializedVersion: 2
     m_Bits: 65

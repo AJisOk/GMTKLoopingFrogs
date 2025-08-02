@@ -18,10 +18,15 @@ public class TongueMechanic : MonoBehaviour
 
     private SpringJoint2D _joint;
     private Vector2 _hitPoint;
+    private Vector2 _missHitPoint;
     private Rigidbody2D _hitRB;
     private Vector3 _transformOffset = new Vector3(0f,1f,0f);
+    private Vector3 aimDirection;
+    private float _dynamicJointDistance;
+    private float _newJointDistance;
 
     private bool _tongueActive = false;
+    //private bool _missActive = false;
     private bool _dynamicGrabbed = false;
 
     private void Awake()
@@ -41,12 +46,39 @@ public class TongueMechanic : MonoBehaviour
             _tongueRange,
             _grappleLayer);
 
+        //Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition) - _tongueOrigin.position);
+
         //fire a false shot on miss
         if (hit.collider == null) return;
+        //if (hit.collider == null)
+        //{
+        //    aimDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition)-_tongueOrigin.position).normalized;
+        //    Debug.Log(aimDirection);
+
+        //    _missHitPoint = new Vector2((aimDirection.x * _tongueRange) + _tongueOrigin.position.x, 
+        //        (aimDirection.y * _tongueRange) + _tongueOrigin.position.y);
+
+        //    _tongueActive = true;
+        //    _missActive = true;
+
+        //    _tongueRenderer.enabled = true;
+        //    _mouthSprite.enabled = true;
+        //    _tongueRenderer.SetPosition(0, _missHitPoint);
+        //    _tongueRenderer.SetPosition(1, _tongueOrigin.position);
+        //    _endTongueSprite.transform.position = _missHitPoint;
+        //    _endTongueSprite.enabled = true;
+
+        //    StartCoroutine(DelayedReleaseTongue(.2f));
+
+        //    return;
+        //}
+
+
 
         //form a different type of connection if a dynamic object is hit
-        if(hit.rigidbody.bodyType == RigidbodyType2D.Dynamic)
+        if (hit.rigidbody.bodyType == RigidbodyType2D.Dynamic)
         {
+            //_missActive = false;
             _tongueActive=true;
             _dynamicGrabbed = true;
 
@@ -67,8 +99,8 @@ public class TongueMechanic : MonoBehaviour
             if(hit.rigidbody.TryGetComponent<Interactable>(out Interactable interactable))
             {
                 interactable.OnGrapple();
-                //StartCoroutine(DelayedReleaseTongue());
-                ReleaseTongue();
+                StartCoroutine(DelayedReleaseTongue(.1f));
+                //ReleaseTongue();
             }
 
 
@@ -77,6 +109,7 @@ public class TongueMechanic : MonoBehaviour
 
 
         _tongueActive = true;
+        //_missActive = false;
 
         _hitPoint = hit.point;
         _joint.connectedAnchor = _hitPoint;
@@ -93,9 +126,9 @@ public class TongueMechanic : MonoBehaviour
         
     }
 
-    private IEnumerator DelayedReleaseTongue()
+    private IEnumerator DelayedReleaseTongue(float delay)
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(delay);
 
         ReleaseTongue();
 
@@ -122,7 +155,9 @@ public class TongueMechanic : MonoBehaviour
         {
             if ( _dynamicGrabbed)
             {
-                _joint.distance = (new Vector2(_hitRB.transform.position.x, _hitRB.transform.position.y) - new Vector2(transform.position.x, transform.position.y + 1)).magnitude - _lengthOffset;
+                _dynamicJointDistance = _joint.distance;
+                _newJointDistance = (new Vector2(_hitRB.transform.position.x, _hitRB.transform.position.y) - new Vector2(transform.position.x, transform.position.y + 1)).magnitude - _lengthOffset;
+                _joint.distance = _newJointDistance < _dynamicJointDistance ? _newJointDistance : _dynamicJointDistance;
             }
             else
             {
@@ -136,6 +171,15 @@ public class TongueMechanic : MonoBehaviour
             
         }
 
+        //if (_missActive)
+        //{
+        //    _missHitPoint = new Vector2((aimDirection.x * _tongueRange) + _tongueOrigin.position.x,
+        //        (aimDirection.y * _tongueRange) + _tongueOrigin.position.y);
+
+        //    _tongueRenderer.SetPosition(0, _missHitPoint);
+        //    _endTongueSprite.transform.position = _missHitPoint;
+        //}
+
         if( _dynamicGrabbed)
         {
             _tongueRenderer.SetPosition(0, _joint.connectedBody.transform.position);
@@ -147,10 +191,12 @@ public class TongueMechanic : MonoBehaviour
     {
         _animator.SetBool("TongueOut", _tongueActive);
     }
+
     public void ReleaseTongue()
     {
         if (!_tongueActive) return;
 
+        //_missActive = false;
         _tongueActive = false;
         _dynamicGrabbed = false;
         _joint.connectedAnchor = Vector2.zero;
