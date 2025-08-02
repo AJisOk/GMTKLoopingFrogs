@@ -192,6 +192,7 @@ MonoBehaviour:
   TopDownMovement: 0
   Rigidbody: {fileID: 2504524581486944129}
   CapsuleCollider: {fileID: 982759175597795447}
+  _animator: {fileID: 0}
   _crouchHeight: 1.5
   _crouchedSprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   _spriteCrouchedScale: 1.5

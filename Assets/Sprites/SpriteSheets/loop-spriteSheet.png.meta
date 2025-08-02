@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: 683ba99e00491ae459b294f2458ee88c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -333799965999208386
+    second: loop-spriteSheet_0
+  - first:
+      213: 8674755852714192327
+    second: loop-spriteSheet_1
+  - first:
+      213: -4476419458938135482
+    second: loop-spriteSheet_2
+  - first:
+      213: -2590757539853584009
+    second: loop-spriteSheet_3
+  - first:
+      213: 7442968445877474545
+    second: loop-spriteSheet_4
+  - first:
+      213: 1056840800331888874
+    second: loop-spriteSheet_5
+  - first:
+      213: -8389433234236572687
+    second: loop-spriteSheet_6
+  - first:
+      213: 309639264018467226
+    second: loop-spriteSheet_7
+  - first:
+      213: -16449628155683838
+    second: loop-spriteSheet_8
+  - first:
+      213: -2984422700633826377
+    second: loop-spriteSheet_9
+  - first:
+      213: 41176094432084547
+    second: loop-spriteSheet_10
+  - first:
+      213: 965075668778331417
+    second: loop-spriteSheet_11
+  - first:
+      213: 8208793537806139088
+    second: loop-spriteSheet_12
+  - first:
+      213: -5641451962170897301
+    second: loop-spriteSheet_13
+  - first:
+      213: -4828306257445309953
+    second: loop-spriteSheet_14
+  - first:
+      213: 1402109531962784018
+    second: loop-spriteSheet_15
+  - first:
+      213: -4016873210178136737
+    second: loop-spriteSheet_16
+  - first:
+      213: 3072895290205618709
+    second: loop-spriteSheet_17
+  - first:
+      213: 7596978474603628391
+    second: loop-spriteSheet_18
+  - first:
+      213: -867540851924193844
+    second: loop-spriteSheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frogIdle
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1441
+        width: 745
+        height: 1216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38649013ba1e5bf0800000000000000
+      internalID: -333799965999208386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogJump1
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 1438
+        width: 729
+        height: 1100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd254abc7ce26870800000000000000
+      internalID: 8674755852714192327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogJump2
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 1445
+        width: 782
+        height: 1255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c985c183090e1c0800000000000000
+      internalID: -4476419458938135482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogJump3
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 1558
+        width: 765
+        height: 1204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779bcd17eb7cb0cd0800000000000000
+      internalID: -2590757539853584009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogJump4
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 1506
+        width: 923
+        height: 1271
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8fbe7cb17aaae00800000000000000
+      internalID: 1056840800331888874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogJump5
+      rect:
+        serializedVersion: 2
+        x: 4741
+        y: 1448
+        width: 729
+        height: 1100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbf87e2ceeb29b80800000000000000
+      internalID: -8389433234236572687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogWalk1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 19
+        width: 801
+        height: 1318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bbdb1dad533596d0800000000000000
+      internalID: -2984422700633826377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogWalk2
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 22
+        width: 801
+        height: 1318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342ccd19079429000800000000000000
+      internalID: 41176094432084547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogWalk3
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 19
+        width: 801
+        height: 1318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91da7e22533a46d00800000000000000
+      internalID: 965075668778331417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogWalk4
+      rect:
+        serializedVersion: 2
+        x: 2814
+        y: 19
+        width: 801
+        height: 1318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0def4770b3e7be170800000000000000
+      internalID: 8208793537806139088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogWalk5
+      rect:
+        serializedVersion: 2
+        x: 3748
+        y: 19
+        width: 801
+        height: 1318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c8f51845985b1b0800000000000000
+      internalID: -5641451962170897301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogWalk6
+      rect:
+        serializedVersion: 2
+        x: 4649
+        y: 19
+        width: 797
+        height: 1318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff13d225a096efcb0800000000000000
+      internalID: -4828306257445309953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogWalk7
+      rect:
+        serializedVersion: 2
+        x: 5598
+        y: 19
+        width: 801
+        height: 1318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219b4dcc03b457310800000000000000
+      internalID: 1402109531962784018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FrogWalk8
+      rect:
+        serializedVersion: 2
+        x: 6516
+        y: 19
+        width: 801
+        height: 1318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f559c8ff8133148c0800000000000000
+      internalID: -4016873210178136737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4fc99aab66a45204bab688d8c41ca219
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FrogJump1: 8674755852714192327
+      FrogJump2: -4476419458938135482
+      FrogJump3: -2590757539853584009
+      FrogJump4: 1056840800331888874
+      FrogJump5: -8389433234236572687
+      FrogWalk1: -2984422700633826377
+      FrogWalk2: 41176094432084547
+      FrogWalk3: 965075668778331417
+      FrogWalk4: 8208793537806139088
+      FrogWalk5: -5641451962170897301
+      FrogWalk6: -4828306257445309953
+      FrogWalk7: 1402109531962784018
+      FrogWalk8: -4016873210178136737
+      frogIdle: -333799965999208386
+      loop-spriteSheet_17: 3072895290205618709
+      loop-spriteSheet_18: 7596978474603628391
+      loop-spriteSheet_19: -867540851924193844
+      loop-spriteSheet_4: 7442968445877474545
+      loop-spriteSheet_7: 309639264018467226
+      loop-spriteSheet_8: -16449628155683838
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

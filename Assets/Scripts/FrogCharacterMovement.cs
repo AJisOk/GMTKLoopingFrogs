@@ -4,10 +4,13 @@ using UnityEngine.InputSystem;
 
 public class FrogCharacterMovement : CharacterMovement2D
 {
+    [SerializeField] protected Animator _animator;
+
     [Header("Crouching")]
     [SerializeField] protected float _crouchHeight;
     [SerializeField] protected Sprite _crouchedSprite;
     [SerializeField] protected float _spriteCrouchedScale = 1.5f;
+    
 
     protected float _baseHeight;
     protected float _baseSpriteScale;
@@ -18,10 +21,17 @@ public class FrogCharacterMovement : CharacterMovement2D
     {
         base.Awake();
 
-        _baseHeight = Height;
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        if (_animator == null) _animator = GetComponent<Animator>();
+
+        _baseHeight = Height;
         _baseSprite = _spriteRenderer.sprite;
         _baseSpriteScale = _spriteRenderer.transform.localScale.y;
+    }
+
+    protected virtual void Update()
+    {
+        _animator.SetFloat("Speed", Velocity.magnitude);
     }
 
     public void OnCrouch(InputValue value)
