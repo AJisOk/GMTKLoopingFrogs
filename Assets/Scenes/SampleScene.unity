@@ -2531,33 +2531,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 982759175597795447, guid: fb54c7102c71fdf45b04788b8ea18327, type: 3}
-      propertyPath: m_Size.y
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 982759175597795447, guid: fb54c7102c71fdf45b04788b8ea18327, type: 3}
-      propertyPath: m_Offset.y
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1407460743774260352, guid: fb54c7102c71fdf45b04788b8ea18327, type: 3}
-      propertyPath: <Speed>k__BackingField
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1407460743774260352, guid: fb54c7102c71fdf45b04788b8ea18327, type: 3}
-      propertyPath: <Height>k__BackingField
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1455871857670046309, guid: fb54c7102c71fdf45b04788b8ea18327, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4075791150903628236, guid: fb54c7102c71fdf45b04788b8ea18327, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4075791150903628236, guid: fb54c7102c71fdf45b04788b8ea18327, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
