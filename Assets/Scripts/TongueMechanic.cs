@@ -107,4 +107,16 @@ public class TongueMechanic : MonoBehaviour
             _tongueRenderer.SetPosition(0, _joint.connectedBody.transform.position);
         }
     }
+
+    public void ReleaseTongue()
+    {
+        if (!_tongueActive) return;
+
+        _tongueActive = false;
+        _dynamicGrabbed = false;
+        _joint.connectedAnchor = Vector2.zero;
+        _joint.enabled = false;
+        _joint.connectedBody = null;
+        _tongueRenderer.enabled = false;
+    }
 }

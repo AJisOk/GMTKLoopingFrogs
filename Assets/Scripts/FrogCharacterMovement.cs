@@ -43,4 +43,9 @@ public class FrogCharacterMovement : CharacterMovement2D
         CapsuleCollider.size = new Vector2(1, _baseHeight);
         //_spriteRenderer.transform.localScale.Set(1,_baseSpriteScale,1);
     }
+
+    public void SetVelocity(Vector2 velocityToSet)
+    {
+        Velocity = velocityToSet;
+    }
 }

@@ -3,13 +3,13 @@ using UnityEngine.Events;
 
 public class Consumable : MonoBehaviour
 {
-    [SerializeField] protected LayerMask _playerLayer;
+    [SerializeField] protected int _playerLayer = 7;
 
     public UnityEvent OnConsume;
 
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.gameObject.layer == _playerLayer.value) return;
+        if (collision.collider.gameObject.layer != _playerLayer) return;
 
         Consume();
     }
