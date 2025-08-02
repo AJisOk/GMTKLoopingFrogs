@@ -17,6 +17,8 @@ public class FrogCharacterMovement : CharacterMovement2D
     protected Sprite _baseSprite;
     protected SpriteRenderer _spriteRenderer;
 
+    protected bool _isCrouched = false;
+
     protected override void Awake()
     {
         base.Awake();
@@ -31,26 +33,33 @@ public class FrogCharacterMovement : CharacterMovement2D
 
     protected virtual void Update()
     {
-        _animator.SetFloat("Speed", Velocity.magnitude);
+        _animator.SetFloat("SpeedX", Mathf.Abs(Velocity.x));
+        _animator.SetFloat("SpeedY", Velocity.y);
+        _animator.SetBool("IsGrounded", IsGrounded);
+        _animator.SetBool("IsCrouched", _isCrouched);
+
+        _spriteRenderer.flipX = (Velocity.x < 0f);
+
     }
 
     public void OnCrouch(InputValue value)
     {
-        _spriteRenderer.sprite = _crouchedSprite;
-
-
-        //Height = _crouchHeight;
+        _isCrouched = true;
         CapsuleCollider.size = new Vector2(1, _crouchHeight);
+
+        //_spriteRenderer.sprite = _crouchedSprite;
+        //Height = _crouchHeight;
         //_spriteRenderer.transform.localScale.Set(1,_spriteCrouchedScale,1);
     }
 
     public void OnUnCrouch(InputValue value)
     {
-        _spriteRenderer.sprite = _baseSprite;
-        
-        
-        //Height = _baseHeight;
+        _isCrouched = false;
         CapsuleCollider.size = new Vector2(1, _baseHeight);
+        
+        
+        //_spriteRenderer.sprite = _baseSprite;
+        //Height = _baseHeight;
         //_spriteRenderer.transform.localScale.Set(1,_baseSpriteScale,1);
     }
 

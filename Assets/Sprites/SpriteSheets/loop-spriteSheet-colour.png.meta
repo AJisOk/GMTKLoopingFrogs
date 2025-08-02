@@ -1,0 +1,898 @@
+fileFormatVersion: 2
+guid: fa92746888580e54697f4f756d45b2dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8050599140379973993
+    second: loop-spriteSheet-colour_0
+  - first:
+      213: -3440778658377492894
+    second: loop-spriteSheet-colour_1
+  - first:
+      213: -2577458544661909159
+    second: loop-spriteSheet-colour_2
+  - first:
+      213: -5112009137607754115
+    second: loop-spriteSheet-colour_3
+  - first:
+      213: 5495957885681845655
+    second: loop-spriteSheet-colour_4
+  - first:
+      213: -6992618925909022072
+    second: loop-spriteSheet-colour_5
+  - first:
+      213: -6963954105306093044
+    second: loop-spriteSheet-colour_6
+  - first:
+      213: -8474033217891478522
+    second: loop-spriteSheet-colour_7
+  - first:
+      213: 370063654351541414
+    second: loop-spriteSheet-colour_8
+  - first:
+      213: -8072661060772178903
+    second: loop-spriteSheet-colour_9
+  - first:
+      213: -3029320673092729452
+    second: loop-spriteSheet-colour_10
+  - first:
+      213: 3783806615569836058
+    second: loop-spriteSheet-colour_11
+  - first:
+      213: 5814018315580221929
+    second: loop-spriteSheet-colour_12
+  - first:
+      213: 2087309076660091009
+    second: loop-spriteSheet-colour_13
+  - first:
+      213: -7124584986831281380
+    second: loop-spriteSheet-colour_14
+  - first:
+      213: 4051502765029356951
+    second: loop-spriteSheet-colour_15
+  - first:
+      213: -635791215890468216
+    second: loop-spriteSheet-colour_16
+  - first:
+      213: -5299137470714742134
+    second: loop-spriteSheet-colour_17
+  - first:
+      213: -3138787016911275522
+    second: loop-spriteSheet-colour_18
+  - first:
+      213: 5638042391437978665
+    second: loop-spriteSheet-colour_19
+  - first:
+      213: 4027560317570705114
+    second: loop-spriteSheet-colour_20
+  - first:
+      213: -3124527558856193313
+    second: loop-spriteSheet-colour_21
+  - first:
+      213: 3046280623799340972
+    second: loop-spriteSheet-colour_22
+  - first:
+      213: 1947955483799317667
+    second: loop-spriteSheet-colour_23
+  - first:
+      213: -3734364296603867396
+    second: loop-spriteSheet-colour_24
+  - first:
+      213: 1671835485990990593
+    second: loop-spriteSheet-colour_25
+  - first:
+      213: 1392196655444130363
+    second: loop-spriteSheet-colour_26
+  - first:
+      213: -858301877750177449
+    second: loop-spriteSheet-colour_27
+  - first:
+      213: -8117921032265825716
+    second: loop-spriteSheet-colour_28
+  - first:
+      213: 6831272538936735672
+    second: loop-spriteSheet-colour_29
+  - first:
+      213: -2773222333009327277
+    second: loop-spriteSheet-colour_30
+  - first:
+      213: 4363088097537979586
+    second: loop-spriteSheet-colour_31
+  - first:
+      213: -6775916835977462241
+    second: loop-spriteSheet-colour_32
+  - first:
+      213: -6767006480473707982
+    second: loop-spriteSheet-colour_33
+  - first:
+      213: 2445648726417529178
+    second: loop-spriteSheet-colour_34
+  - first:
+      213: 7570601739657499913
+    second: loop-spriteSheet-colour_35
+  - first:
+      213: -3357544434274043000
+    second: loop-spriteSheet-colour_36
+  - first:
+      213: 4642449059975049661
+    second: loop-spriteSheet-colour_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 4519
+        width: 725
+        height: 1277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951b12e0c170b3cd0800000000000000
+      internalID: -2577458544661909159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping1
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 4542
+        width: 714
+        height: 1167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795c2940490954c40800000000000000
+      internalID: 5495957885681845655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping2
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 4557
+        width: 813
+        height: 1314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ae487a22a35fe90800000000000000
+      internalID: -6992618925909022072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping3
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 4684
+        width: 783
+        height: 1259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a6b1943a01b5f90800000000000000
+      internalID: -6963954105306093044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping4
+      rect:
+        serializedVersion: 2
+        x: 3781
+        y: 4588
+        width: 842
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604d7b88faf266a80800000000000000
+      internalID: -8474033217891478522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumping5
+      rect:
+        serializedVersion: 2
+        x: 4749
+        y: 4537
+        width: 755
+        height: 1182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a418e5deeab22500800000000000000
+      internalID: 370063654351541414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 3025
+        width: 748
+        height: 1300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188f5c2db8c97fc10800000000000000
+      internalID: 2087309076660091009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running2
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 3025
+        width: 678
+        height: 1265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1327dfb3b3602d90800000000000000
+      internalID: -7124584986831281380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running3
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 3013
+        width: 683
+        height: 1335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795761c8c44d93830800000000000000
+      internalID: 4051502765029356951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running4
+      rect:
+        serializedVersion: 2
+        x: 2866
+        y: 3013
+        width: 682
+        height: 1377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882f889f1473d27f0800000000000000
+      internalID: -635791215890468216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running5
+      rect:
+        serializedVersion: 2
+        x: 3802
+        y: 3049
+        width: 759
+        height: 1301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8af512eb8ea576b0800000000000000
+      internalID: -5299137470714742134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running6
+      rect:
+        serializedVersion: 2
+        x: 4712
+        y: 3040
+        width: 696
+        height: 1277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9356f86d9c074d0800000000000000
+      internalID: -3138787016911275522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running7
+      rect:
+        serializedVersion: 2
+        x: 5637
+        y: 3064
+        width: 702
+        height: 1277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c2142fea95e3e40800000000000000
+      internalID: 5638042391437978665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running8
+      rect:
+        serializedVersion: 2
+        x: 6573
+        y: 3074
+        width: 688
+        height: 1298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda457b5db273a4d0800000000000000
+      internalID: -3124527558856193313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueIdle
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1522
+        width: 736
+        height: 1305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ace12a1137880b10800000000000000
+      internalID: 1947955483799317667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueJump1
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1544
+        width: 702
+        height: 1186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103b269448d833710800000000000000
+      internalID: 1671835485990990593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueJump2
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 1559
+        width: 787
+        height: 1323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3afb316b73125310800000000000000
+      internalID: 1392196655444130363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueJump3
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1673
+        width: 770
+        height: 1284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75166aa5df2b614f0800000000000000
+      internalID: -858301877750177449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueJump4
+      rect:
+        serializedVersion: 2
+        x: 3754
+        y: 1586
+        width: 877
+        height: 1325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c428f1de4d9575f80800000000000000
+      internalID: -8117921032265825716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueJump5
+      rect:
+        serializedVersion: 2
+        x: 4716
+        y: 1547
+        width: 766
+        height: 1196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b774373e2e8dce50800000000000000
+      internalID: 6831272538936735672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueRunning1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 25
+        width: 740
+        height: 1331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b8cc53bf88389d0800000000000000
+      internalID: -2773222333009327277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueRunning2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 28
+        width: 659
+        height: 1296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c47c71128dcc8c30800000000000000
+      internalID: 4363088097537979586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueRunning3
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 15
+        width: 659
+        height: 1366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e79fbb98b17f1a0800000000000000
+      internalID: -6775916835977462241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueRunning4
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 15
+        width: 664
+        height: 1408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a299a8573c612a0800000000000000
+      internalID: -6767006480473707982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueRunning5
+      rect:
+        serializedVersion: 2
+        x: 3787
+        y: 51
+        width: 760
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a59d08f1f80b0f120800000000000000
+      internalID: 2445648726417529178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueRunning6
+      rect:
+        serializedVersion: 2
+        x: 4715
+        y: 42
+        width: 671
+        height: 1309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9055d34eb2e201960800000000000000
+      internalID: 7570601739657499913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueRunning7
+      rect:
+        serializedVersion: 2
+        x: 5643
+        y: 66
+        width: 673
+        height: 1308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b7185402b9761d0800000000000000
+      internalID: -3357544434274043000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TongueRunning8
+      rect:
+        serializedVersion: 2
+        x: 6571
+        y: 81
+        width: 691
+        height: 1330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1b8a3c2da4d6040800000000000000
+      internalID: 4642449059975049661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4a2c8e12e353cad4ca85cfada4d58dc1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Idle: -2577458544661909159
+      Jumping1: 5495957885681845655
+      Jumping2: -6992618925909022072
+      Jumping3: -6963954105306093044
+      Jumping4: -8474033217891478522
+      Jumping5: 370063654351541414
+      Running1: 2087309076660091009
+      Running2: -7124584986831281380
+      Running3: 4051502765029356951
+      Running4: -635791215890468216
+      Running5: -5299137470714742134
+      Running6: -3138787016911275522
+      Running7: 5638042391437978665
+      Running8: -3124527558856193313
+      TongueIdle: 1947955483799317667
+      TongueJump1: 1671835485990990593
+      TongueJump2: 1392196655444130363
+      TongueJump3: -858301877750177449
+      TongueJump4: -8117921032265825716
+      TongueJump5: 6831272538936735672
+      TongueRunning1: -2773222333009327277
+      TongueRunning2: 4363088097537979586
+      TongueRunning3: -6775916835977462241
+      TongueRunning4: -6767006480473707982
+      TongueRunning5: 2445648726417529178
+      TongueRunning6: 7570601739657499913
+      TongueRunning7: -3357544434274043000
+      TongueRunning8: 4642449059975049661
+      loop-spriteSheet-colour_0: 8050599140379973993
+      loop-spriteSheet-colour_1: -3440778658377492894
+      loop-spriteSheet-colour_10: -3029320673092729452
+      loop-spriteSheet-colour_11: 3783806615569836058
+      loop-spriteSheet-colour_12: 5814018315580221929
+      loop-spriteSheet-colour_20: 4027560317570705114
+      loop-spriteSheet-colour_22: 3046280623799340972
+      loop-spriteSheet-colour_24: -3734364296603867396
+      loop-spriteSheet-colour_3: -5112009137607754115
+      loop-spriteSheet-colour_9: -8072661060772178903
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,7 +11,10 @@ public class TongueMechanic : MonoBehaviour
     [SerializeField] private LayerMask _grappleLayer;
     [SerializeField] private LayerMask _dynamicGrappleLayer;
     [SerializeField] private LineRenderer _tongueRenderer;
-
+    [SerializeField] private Animator _animator;
+    [SerializeField] private Transform _tongueOrigin;
+    [SerializeField] private SpriteRenderer _mouthSprite;
+    [SerializeField] private SpriteRenderer _endTongueSprite;
 
     private SpringJoint2D _joint;
     private Vector2 _hitPoint;
@@ -27,13 +30,14 @@ public class TongueMechanic : MonoBehaviour
         _tongueRenderer = GetComponentInChildren<LineRenderer>();
         _joint.enabled = false;
         _tongueRenderer.enabled = false;
+        _mouthSprite.enabled = false;
 
     }
 
     public void OnTongueShoot(InputValue value)
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position + _transformOffset,
-            (Camera.main.ScreenToWorldPoint(Input.mousePosition) - (transform.position + _transformOffset)),
+        RaycastHit2D hit = Physics2D.Raycast(_tongueOrigin.position,
+            (Camera.main.ScreenToWorldPoint(Input.mousePosition) - (_tongueOrigin.position)),
             _tongueRange,
             _grappleLayer);
 
@@ -53,8 +57,12 @@ public class TongueMechanic : MonoBehaviour
 
 
             _tongueRenderer.SetPosition(0, hit.collider.transform.position);
-            _tongueRenderer.SetPosition(1, transform.position + _transformOffset);
+            _tongueRenderer.SetPosition(1, _tongueOrigin.position);
+            _endTongueSprite.transform.position = hit.collider.transform.position;
             _tongueRenderer.enabled = true;
+            _mouthSprite.enabled = true;
+            _endTongueSprite.enabled = true;
+
 
             if(hit.rigidbody.TryGetComponent<Interactable>(out Interactable interactable))
             {
@@ -76,8 +84,11 @@ public class TongueMechanic : MonoBehaviour
         _joint.enabled = true;
 
         _tongueRenderer.enabled = true;
+        _mouthSprite.enabled = true;
         _tongueRenderer.SetPosition(0, _hitPoint);
-        _tongueRenderer.SetPosition(1, transform.position + _transformOffset);
+        _tongueRenderer.SetPosition(1, _tongueOrigin.position);
+        _endTongueSprite.transform.position = _hitPoint;
+        _endTongueSprite.enabled = true;
         
         
     }
@@ -101,6 +112,8 @@ public class TongueMechanic : MonoBehaviour
         _joint.enabled = false;
         _joint.connectedBody = null;
         _tongueRenderer.enabled = false;
+        _mouthSprite.enabled = false;
+        _endTongueSprite.enabled = false;
     }
 
     private void FixedUpdate()
@@ -119,16 +132,21 @@ public class TongueMechanic : MonoBehaviour
 
         if (_tongueRenderer.enabled)
         {
-            _tongueRenderer.SetPosition(1, transform.position + _transformOffset);
+            _tongueRenderer.SetPosition(1, _tongueOrigin.position);
             
         }
 
         if( _dynamicGrabbed)
         {
             _tongueRenderer.SetPosition(0, _joint.connectedBody.transform.position);
+            _endTongueSprite.transform.position = _joint.connectedBody.transform.position;
         }
     }
 
+    private void Update()
+    {
+        _animator.SetBool("TongueOut", _tongueActive);
+    }
     public void ReleaseTongue()
     {
         if (!_tongueActive) return;
@@ -139,5 +157,7 @@ public class TongueMechanic : MonoBehaviour
         _joint.enabled = false;
         _joint.connectedBody = null;
         _tongueRenderer.enabled = false;
+        _mouthSprite.enabled = false;
+        _endTongueSprite.enabled = false;
     }
 }
