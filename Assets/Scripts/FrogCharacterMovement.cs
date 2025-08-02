@@ -8,16 +8,21 @@ public class FrogCharacterMovement : CharacterMovement2D
 
     [Header("Crouching")]
     [SerializeField] protected float _crouchHeight;
+    [SerializeField] protected float _crouchOffset = 0.75f;
     [SerializeField] protected Sprite _crouchedSprite;
     [SerializeField] protected float _spriteCrouchedScale = 1.5f;
     
 
     protected float _baseHeight;
+    protected float _baseOffset;
     protected float _baseSpriteScale;
     protected Sprite _baseSprite;
     protected SpriteRenderer _spriteRenderer;
 
     protected bool _isCrouched = false;
+    protected bool _tryingUnCrouch = false;
+
+    public bool IsCrouched { get => _isCrouched; }
 
     protected override void Awake()
     {
@@ -27,6 +32,7 @@ public class FrogCharacterMovement : CharacterMovement2D
         if (_animator == null) _animator = GetComponent<Animator>();
 
         _baseHeight = Height;
+        _baseOffset = CapsuleCollider.offset.y;
         _baseSprite = _spriteRenderer.sprite;
         _baseSpriteScale = _spriteRenderer.transform.localScale.y;
     }
@@ -40,12 +46,25 @@ public class FrogCharacterMovement : CharacterMovement2D
 
         _spriteRenderer.flipX = (Velocity.x < 0f);
 
+        if (_tryingUnCrouch)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, _baseHeight, GroundMask);
+
+            if(hit.collider == null)
+            {
+                _tryingUnCrouch = false;
+                UnCrouch();
+            }
+        }
+
     }
 
     public void OnCrouch(InputValue value)
     {
         _isCrouched = true;
+        _tryingUnCrouch = false;
         CapsuleCollider.size = new Vector2(1, _crouchHeight);
+        CapsuleCollider.offset = new Vector2(0, _crouchOffset);
 
         //_spriteRenderer.sprite = _crouchedSprite;
         //Height = _crouchHeight;
@@ -54,10 +73,32 @@ public class FrogCharacterMovement : CharacterMovement2D
 
     public void OnUnCrouch(InputValue value)
     {
+        //check if something is blocking player from uncrouching
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up,_baseHeight,GroundMask);
+
+        if(hit.collider != null)
+        {
+            _tryingUnCrouch = true;
+            return;
+        }
+
+        UnCrouch();
+    }
+
+    protected override void OnDrawGizmosSelected()
+    {
+        base.OnDrawGizmosSelected();
+
+        Gizmos.DrawLine(transform.position, transform.position + (Vector3.up * _baseHeight));
+        
+    }
+
+    protected virtual void UnCrouch()
+    {
         _isCrouched = false;
         CapsuleCollider.size = new Vector2(1, _baseHeight);
-        
-        
+        CapsuleCollider.offset = new Vector2(0, _baseOffset);
+
         //_spriteRenderer.sprite = _baseSprite;
         //Height = _baseHeight;
         //_spriteRenderer.transform.localScale.Set(1,_baseSpriteScale,1);

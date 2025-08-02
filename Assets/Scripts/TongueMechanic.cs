@@ -13,9 +13,11 @@ public class TongueMechanic : MonoBehaviour
     [SerializeField] private LineRenderer _tongueRenderer;
     [SerializeField] private Animator _animator;
     [SerializeField] private Transform _tongueOrigin;
+    [SerializeField] private Transform _crouchedTongueOrigin;
     [SerializeField] private SpriteRenderer _mouthSprite;
     [SerializeField] private SpriteRenderer _endTongueSprite;
 
+    private FrogCharacterMovement _movement;
     private SpringJoint2D _joint;
     private Vector2 _hitPoint;
     private Vector2 _missHitPoint;
@@ -31,6 +33,8 @@ public class TongueMechanic : MonoBehaviour
 
     private void Awake()
     {
+        _movement = GetComponent<FrogCharacterMovement>();
+
         _joint = GetComponent<SpringJoint2D>();
         _tongueRenderer = GetComponentInChildren<LineRenderer>();
         _joint.enabled = false;
@@ -39,10 +43,12 @@ public class TongueMechanic : MonoBehaviour
 
     }
 
+    
+
     public void OnTongueShoot(InputValue value)
     {
-        RaycastHit2D hit = Physics2D.Raycast(_tongueOrigin.position,
-            (Camera.main.ScreenToWorldPoint(Input.mousePosition) - (_tongueOrigin.position)),
+        RaycastHit2D hit = Physics2D.Raycast(_movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position,
+            (Camera.main.ScreenToWorldPoint(Input.mousePosition) - (_movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position)),
             _tongueRange,
             _grappleLayer);
 
@@ -89,7 +95,7 @@ public class TongueMechanic : MonoBehaviour
 
 
             _tongueRenderer.SetPosition(0, hit.collider.transform.position);
-            _tongueRenderer.SetPosition(1, _tongueOrigin.position);
+            _tongueRenderer.SetPosition(1, _movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position);
             _endTongueSprite.transform.position = hit.collider.transform.position;
             _tongueRenderer.enabled = true;
             _mouthSprite.enabled = true;
@@ -119,7 +125,7 @@ public class TongueMechanic : MonoBehaviour
         _tongueRenderer.enabled = true;
         _mouthSprite.enabled = true;
         _tongueRenderer.SetPosition(0, _hitPoint);
-        _tongueRenderer.SetPosition(1, _tongueOrigin.position);
+        _tongueRenderer.SetPosition(1, _movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position);
         _endTongueSprite.transform.position = _hitPoint;
         _endTongueSprite.enabled = true;
         
@@ -167,7 +173,7 @@ public class TongueMechanic : MonoBehaviour
 
         if (_tongueRenderer.enabled)
         {
-            _tongueRenderer.SetPosition(1, _tongueOrigin.position);
+            _tongueRenderer.SetPosition(1, _movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position);
             
         }
 

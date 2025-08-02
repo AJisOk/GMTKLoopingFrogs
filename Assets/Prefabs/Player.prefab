@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &889138167657769786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1408795136132265593}
+  m_Layer: 7
+  m_Name: CrouchedTongueOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1408795136132265593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889138167657769786}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 890425814776939355}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1455871857670046309
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,6 +71,7 @@ Transform:
   - {fileID: 4075791150903628236}
   - {fileID: 8254220851785836495}
   - {fileID: 560640490158059329}
+  - {fileID: 1408795136132265593}
   - {fileID: 3783403280828594178}
   - {fileID: 1771371573102382161}
   m_Father: {fileID: 0}
@@ -198,6 +230,7 @@ MonoBehaviour:
   CapsuleCollider: {fileID: 982759175597795447}
   _animator: {fileID: 3007165814197102235}
   _crouchHeight: 1.5
+  _crouchOffset: 0.75
   _crouchedSprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   _spriteCrouchedScale: 1.5
 --- !u!114 &690745917928588478
@@ -223,6 +256,7 @@ MonoBehaviour:
   _tongueRenderer: {fileID: 1494133809416128602}
   _animator: {fileID: 3007165814197102235}
   _tongueOrigin: {fileID: 560640490158059329}
+  _crouchedTongueOrigin: {fileID: 1408795136132265593}
   _mouthSprite: {fileID: 7528165322673768955}
   _endTongueSprite: {fileID: 365970734060132659}
 --- !u!231 &1098576397294690881
