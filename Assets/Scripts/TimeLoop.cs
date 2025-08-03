@@ -10,6 +10,7 @@ public class TimeLoop : MonoBehaviour
     [SerializeField] private float _loopIncrement = 2f;
     [SerializeField] private FrogCharacterMovement _characterMovement;
     [SerializeField] private Transform _startLocation;
+    [SerializeField] private GameObject _smokePoof;
 
     [Header("UI")]
     [SerializeField] private Image _screenFill;
@@ -96,9 +97,12 @@ public class TimeLoop : MonoBehaviour
         _timer = 0f;
         _screenFill.fillAmount = 1f - Mathf.InverseLerp(0, _loopDuration, _timer);
         
+        GameObject.Instantiate(_smokePoof, new Vector3(_characterMovement.transform.position.x, _characterMovement.transform.position.y+1, _characterMovement.transform.position.z) , Quaternion.identity);
+
         _characterMovement.SetVelocity(new Vector2(0, 0));
         _characterMovement.transform.position = _startLocation.transform.position;
 
+        GameObject.Instantiate(_smokePoof, new Vector3(_characterMovement.transform.position.x, _characterMovement.transform.position.y+1, _characterMovement.transform.position.z) , Quaternion.identity);
         StartCoroutine(GreenPulse());
 
         OnLoopReset.Invoke();
@@ -116,16 +120,20 @@ public class TimeLoop : MonoBehaviour
         _isTiming = false;
 
         _characterMovement.transform.position = _startLocation.position;
+        GameObject.Instantiate(_smokePoof, new Vector3(_characterMovement.transform.position.x, _characterMovement.transform.position.y+1, _characterMovement.transform.position.z) , Quaternion.identity);
+        
         _characterMovement.SetVelocity(new Vector2(-0.1f, 0f));
         _characterMovement.CanMove = false;
         _tongue.CanTongue = false;
         _tongue.ReleaseTongue();
 
+        GameObject.Instantiate(_smokePoof, _poison.transform.position, Quaternion.identity);
         _poison.gameObject.SetActive(false);
         _animator.SetBool("PoisonDelivered", true);
+        
 
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3.3f);
 
         //play purple pulse for witch poisoned
         c = _witchPoisonedColour;
