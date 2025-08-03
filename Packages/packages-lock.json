@@ -10,6 +10,16 @@
       },
       "hash": "ebbe778cdd51d5b71199e1001093d59d639d803c"
     },
+    "com.qhenshaw.uicomponents": {
+      "version": "https://github.com/qhenshaw/UIComponents.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.inputsystem": "1.4.4",
+        "com.unity.ugui": "1.0.0"
+      },
+      "hash": "116ba9bcd8bfbbdbde8a73d7da7c65fcad0bd202"
+    },
     "com.unity.2d.animation": {
       "version": "10.1.4",
       "depth": 1,

@@ -31,8 +31,11 @@ public class TongueMechanic : MonoBehaviour
     //private bool _missActive = false;
     private bool _dynamicGrabbed = false;
 
+    public bool CanTongue { get; set; }
     private void Awake()
     {
+        CanTongue = true;
+
         _movement = GetComponent<FrogCharacterMovement>();
 
         _joint = GetComponent<SpringJoint2D>();
@@ -47,6 +50,8 @@ public class TongueMechanic : MonoBehaviour
 
     public void OnTongueShoot(InputValue value)
     {
+        if (!CanTongue) return;
+
         RaycastHit2D hit = Physics2D.Raycast(_movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position,
             (Camera.main.ScreenToWorldPoint(Input.mousePosition) - (_movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position)),
             _tongueRange,

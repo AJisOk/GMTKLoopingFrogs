@@ -23,12 +23,27 @@ public class TimeLoop : MonoBehaviour
     [SerializeField] private AnimationCurve _pulseCurve;
     [SerializeField] private AnimationCurve _durationIncreaseCurve;
 
+    [Header("End Anim")]
+    [SerializeField] private Poison _poison;
+    [SerializeField] private Teacup _teacup;
+    [SerializeField] private Sprite _poisonSprite;
+    [SerializeField] private CanvasGroup _curseLiftedCG;
+    [SerializeField] private CanvasGroup _witchPoisonedCG;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private Color _witchPoisonedColour = Color.blue;
+    [SerializeField] private Color _curseLiftedColour = Color.yellow;
+    [SerializeField] private Canvas _gameOverCanvas;
+    [SerializeField] private CanvasGroup _gameOverCG;
+
+
     public UnityEvent OnLoopDurationExtended;
     public UnityEvent OnLoopReset;
 
     private float _loopDuration;
     private float _timer = 0f;
     private Color c;
+    private TongueMechanic _tongue;
+    private bool _isTiming = true;
 
     private bool _countdown = false;
 
@@ -37,12 +52,16 @@ public class TimeLoop : MonoBehaviour
         _loopDuration = _baseLoopDuration;
         _vignette.color = _clearColour;
         _durationIncreasedCG.alpha = 0f;
+        _tongue = _characterMovement.GetComponent<TongueMechanic>();
+
+        _gameOverCanvas.gameObject.SetActive(false);
+        _gameOverCG.alpha = 0f;
 
     }
 
     private void FixedUpdate()
     {
-        _timer += Time.deltaTime;
+        if(_isTiming) _timer += Time.deltaTime;
         _screenFill.fillAmount = 1f - Mathf.InverseLerp(0, _loopDuration, _timer);
 
 
@@ -83,6 +102,82 @@ public class TimeLoop : MonoBehaviour
         StartCoroutine(GreenPulse());
 
         OnLoopReset.Invoke();
+    }
+
+     public void OnPoisonDelivered()
+    {
+        StartCoroutine(PoisonDelivered());
+
+    }
+
+    private IEnumerator PoisonDelivered()
+    {
+        //Time.timeScale = .8f;
+        _isTiming = false;
+
+        _characterMovement.transform.position = _startLocation.position;
+        _characterMovement.SetVelocity(new Vector2(-0.1f, 0f));
+        _characterMovement.CanMove = false;
+        _tongue.CanTongue = false;
+        _tongue.ReleaseTongue();
+
+        _poison.gameObject.SetActive(false);
+        _animator.SetBool("PoisonDelivered", true);
+
+
+        yield return new WaitForSeconds(2f);
+
+        //play purple pulse for witch poisoned
+        c = _witchPoisonedColour;
+        _vignette.color = c;
+
+        _witchPoisonedCG.alpha = 1f;
+
+        float t = 0f;
+        while (t < 2f)
+        {
+            c.a = Mathf.Lerp(_clearColour.a, _witchPoisonedColour.a, _durationIncreaseCurve.Evaluate(t));
+            _vignette.color = c;
+
+            _witchPoisonedCG.alpha = _durationIncreaseCurve.Evaluate(t);
+
+            t += Time.deltaTime;
+            yield return null;
+        }
+        _witchPoisonedCG.alpha = 0f;
+
+        //play yellow pulse for curse lifted
+        c = _curseLiftedColour;
+        _vignette.color = c;
+
+        _curseLiftedCG.alpha = 1f;
+
+        t = 0f;
+        while (t < 2f)
+        {
+            c.a = Mathf.Lerp(_clearColour.a, _curseLiftedColour.a, _durationIncreaseCurve.Evaluate(t));
+            _vignette.color = c;
+
+            _curseLiftedCG.alpha = _durationIncreaseCurve.Evaluate(t);
+
+            t += Time.deltaTime;
+            yield return null;
+        }
+        _curseLiftedCG.alpha = 0f;
+
+        _gameOverCanvas.gameObject.SetActive(true);
+        t = 0f;
+        while (t < 2f)
+        {
+            _gameOverCG.alpha = Mathf.Lerp(0,1,t);
+
+            t += Time.deltaTime;
+            yield return null;
+        }
+        _gameOverCG.alpha = 1f;
+
+
+        yield return null;
     }
 
     private IEnumerator BluePulse()
@@ -152,7 +247,6 @@ public class TimeLoop : MonoBehaviour
 
     private IEnumerator GreenPulse()
     {
-
         _countdown = true;
         c = _startColour;
         _vignette.color = c;

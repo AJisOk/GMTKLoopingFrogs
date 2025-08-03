@@ -5,7 +5,7 @@ public class Teacup : MonoBehaviour
 {
     [SerializeField] private BoxCollider2D _trigger;
 
-    private UnityEvent OnTeaPoisoned;
+    public UnityEvent OnTeaPoisoned;
 
     private bool _teaPoisoned;
 
