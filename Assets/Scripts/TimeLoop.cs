@@ -62,7 +62,8 @@ public class TimeLoop : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(_isTiming) _timer += Time.deltaTime;
+        if (!_isTiming) return; 
+        _timer += Time.deltaTime;
         _screenFill.fillAmount = 1f - Mathf.InverseLerp(0, _loopDuration, _timer);
 
 

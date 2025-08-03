@@ -16,6 +16,7 @@ public class FrogCharacterMovement : CharacterMovement2D
     protected float _baseHeight;
     protected float _baseOffset;
     protected float _baseSpriteScale;
+    protected Vector3 _baseSpritePosition;
     protected Sprite _baseSprite;
     protected SpriteRenderer _spriteRenderer;
 
@@ -35,6 +36,7 @@ public class FrogCharacterMovement : CharacterMovement2D
         _baseOffset = CapsuleCollider.offset.y;
         _baseSprite = _spriteRenderer.sprite;
         _baseSpriteScale = _spriteRenderer.transform.localScale.y;
+        _baseSpritePosition = _spriteRenderer.transform.localPosition;
     }
 
     protected virtual void Update()
@@ -66,6 +68,10 @@ public class FrogCharacterMovement : CharacterMovement2D
         CapsuleCollider.size = new Vector2(1, _crouchHeight);
         CapsuleCollider.offset = new Vector2(0, _crouchOffset);
 
+        _spriteRenderer.transform.position = new Vector3(_spriteRenderer.transform.position.x,
+            _spriteRenderer.transform.position.y - 0.3f,
+            _spriteRenderer.transform.position.z);
+
         //_spriteRenderer.sprite = _crouchedSprite;
         //Height = _crouchHeight;
         //_spriteRenderer.transform.localScale.Set(1,_spriteCrouchedScale,1);
@@ -95,9 +101,10 @@ public class FrogCharacterMovement : CharacterMovement2D
 
     protected virtual void UnCrouch()
     {
-        _isCrouched = false;
         CapsuleCollider.size = new Vector2(1, _baseHeight);
         CapsuleCollider.offset = new Vector2(0, _baseOffset);
+        _spriteRenderer.transform.localPosition = _baseSpritePosition;
+        _isCrouched = false;
 
         //_spriteRenderer.sprite = _baseSprite;
         //Height = _baseHeight;

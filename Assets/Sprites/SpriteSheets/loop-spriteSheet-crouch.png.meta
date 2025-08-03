@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: bcd6725d7af6af54f995ecb0e556f313
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3522948395379924031
+    second: loop-spriteSheet-crouch_0
+  - first:
+      213: 4622906782189432318
+    second: loop-spriteSheet-crouch_1
+  - first:
+      213: -157107438472205383
+    second: loop-spriteSheet-crouch_2
+  - first:
+      213: -4499934079600938459
+    second: loop-spriteSheet-crouch_3
+  - first:
+      213: 3672788357097134778
+    second: loop-spriteSheet-crouch_4
+  - first:
+      213: 8294142057997995411
+    second: loop-spriteSheet-crouch_5
+  - first:
+      213: 2059323812642247500
+    second: loop-spriteSheet-crouch_6
+  - first:
+      213: -827692745982716427
+    second: loop-spriteSheet-crouch_7
+  - first:
+      213: -5368234320679092506
+    second: loop-spriteSheet-crouch_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 700
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: loop-spriteSheet-crouch_0
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 61
+        width: 1212
+        height: 1190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c3e85b8919fb1fc0800000000000000
+      internalID: -3522948395379924031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: loop-spriteSheet-crouch_1
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 47
+        width: 1315
+        height: 1188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd2526a93dd72040800000000000000
+      internalID: 4622906782189432318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: loop-spriteSheet-crouch_2
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 22
+        width: 1567
+        height: 1204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bbea4afd97d1ddf0800000000000000
+      internalID: -157107438472205383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: loop-spriteSheet-crouch_3
+      rect:
+        serializedVersion: 2
+        x: 5123
+        y: 52
+        width: 1478
+        height: 1195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52236b8dbc50d81c0800000000000000
+      internalID: -4499934079600938459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: loop-spriteSheet-crouch_4
+      rect:
+        serializedVersion: 2
+        x: 6915
+        y: 54
+        width: 1301
+        height: 1223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba17ff2d8d58f230800000000000000
+      internalID: 3672788357097134778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: loop-spriteSheet-crouch_5
+      rect:
+        serializedVersion: 2
+        x: 8632
+        y: 59
+        width: 1221
+        height: 1258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d099be146ba1370800000000000000
+      internalID: 8294142057997995411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: loop-spriteSheet-crouch_6
+      rect:
+        serializedVersion: 2
+        x: 10304
+        y: 72
+        width: 1170
+        height: 1268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c435b0ac810349c10800000000000000
+      internalID: 2059323812642247500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: loop-spriteSheet-crouch_7
+      rect:
+        serializedVersion: 2
+        x: 11993
+        y: 79
+        width: 1107
+        height: 1288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5588435d17384f0800000000000000
+      internalID: -827692745982716427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: loop-spriteSheet-crouch_8
+      rect:
+        serializedVersion: 2
+        x: 13630
+        y: 87
+        width: 1170
+        height: 1222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eebcd4d3533085b0800000000000000
+      internalID: -5368234320679092506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      loop-spriteSheet-crouch_0: -3522948395379924031
+      loop-spriteSheet-crouch_1: 4622906782189432318
+      loop-spriteSheet-crouch_2: -157107438472205383
+      loop-spriteSheet-crouch_3: -4499934079600938459
+      loop-spriteSheet-crouch_4: 3672788357097134778
+      loop-spriteSheet-crouch_5: 8294142057997995411
+      loop-spriteSheet-crouch_6: 2059323812642247500
+      loop-spriteSheet-crouch_7: -827692745982716427
+      loop-spriteSheet-crouch_8: -5368234320679092506
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

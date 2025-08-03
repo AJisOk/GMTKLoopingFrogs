@@ -1,6 +1,5 @@
 using System.Collections;
 using Unity.Cinemachine;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -103,6 +102,7 @@ public class TongueMechanic : MonoBehaviour
             _tongueRenderer.SetPosition(1, _movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position);
             _endTongueSprite.transform.position = hit.collider.transform.position;
             _tongueRenderer.enabled = true;
+            _mouthSprite.transform.position = _movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position;
             _mouthSprite.enabled = true;
             _endTongueSprite.enabled = true;
 
@@ -128,6 +128,7 @@ public class TongueMechanic : MonoBehaviour
         _joint.enabled = true;
 
         _tongueRenderer.enabled = true;
+        _mouthSprite.transform.position = _movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position;
         _mouthSprite.enabled = true;
         _tongueRenderer.SetPosition(0, _hitPoint);
         _tongueRenderer.SetPosition(1, _movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position);
@@ -180,6 +181,11 @@ public class TongueMechanic : MonoBehaviour
         {
             _tongueRenderer.SetPosition(1, _movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position);
             
+        }
+
+        if(_mouthSprite.enabled)
+        {
+            _mouthSprite.transform.position = _movement.IsCrouched ? _crouchedTongueOrigin.position : _tongueOrigin.position;
         }
 
         //if (_missActive)
